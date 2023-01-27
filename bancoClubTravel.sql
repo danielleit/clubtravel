@@ -86,4 +86,4 @@ alter table news add constraint fk_news_traveler foreign key (traveler) referenc
 alter table news add constraint fk_news_destinations foreign key (destinations) references destinations(id_destinations);
 alter table comments add constraint fk_comments_traveler foreign key (traveler) references traveler(id_traveler);
 alter table comments add constraint fk_comments_news foreign key (news) references news(id_news);
-alter table events add constraint fk_events_destinations foreign key (events) references events(id_events);
+alter table events add constraint fk_events_destinations foreign key (destinations) references destinations(id_destinations);
